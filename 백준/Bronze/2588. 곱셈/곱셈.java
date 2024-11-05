@@ -7,17 +7,6 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int a = sc.nextInt();
-		String b = sc.next();
-
-		System.out.println(a * (b.charAt(2) - '0'));
-		System.out.println(a * (b.charAt(1) - '0'));
-		System.out.println(a *(b.charAt(0) - '0'));
-		
-		int numB = Integer.parseInt(b);
-		System.out.println(a * numB);
-		
-		/* 
-  		int a = sc.nextInt();
 		int b = sc.nextInt();
 	
 		String bStr = String.valueOf(b);
@@ -34,10 +23,6 @@ public class Main {
 		System.out.println(a * b2);
 		System.out.println(a * b1);
 		System.out.println(a * b);
-  		*/
-
-
-		
 		
 	}
 
