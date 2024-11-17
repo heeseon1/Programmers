@@ -10,23 +10,15 @@ public class Main {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
     	int t = Integer.parseInt(br.readLine());
-    	 int arr[] = new int[t];
-    	 int arra[] = new int[t];
-    	 int arrb[] = new int[t];
     	
-    	 for ( int i =0; i  <  t;  i ++) {
+    	 for ( int i = 1; i  <=  t;  i++) {
     		 String[] inputs = br.readLine().split(" ");
              int a = Integer.parseInt(inputs[0]);
              int b = Integer.parseInt(inputs[1]);
-	    	arr[i] =   a + b;
-	    	arra[i] = a;
-	    	arrb[i] = b;
+             int sum = a + b;
+             
+             bw.write("Case #" + i + ": " + a + " + " + b + " = " + sum + "\n" );
 	    	}
-	       
-    	 	for(int j = 0; j < t; j++) {
-    	 		bw.write("Case #" + ( j+1) + ": " + arra[j] + " + " + arrb[j] + " = " + arr[j] + "\n" );
-    	 	}
-
 	    	 bw.flush();
 	         bw.close();
 }
