@@ -9,13 +9,16 @@ public class Main {
 		String[] number =br.readLine().split(" ");
 		int n = Integer.parseInt(number[0]);
 		int x =  Integer.parseInt(number[1]);
-		int arr[] = new int [n];
+		
+		StringBuilder str = new StringBuilder ();
 		String[] inputs =br.readLine().split(" ");
 		
 		for (int i = 0; i < n; i++) {
-			if(Integer.parseInt(inputs[i]) < x) {
-				System.out.print(inputs[i] + " ");
+			int value = Integer. parseInt(inputs[i]);
+			if( value < x) {
+				str.append(value).append(" ");
 			}
 		}
+		System.out.println(str.toString().trim());
 	}
 }
