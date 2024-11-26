@@ -26,3 +26,15 @@
 
  <p>첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.</p>
 
+ ### 수정
+<p>성능 최적화</p>
+
+1. 입출력 방식
+- BufferedWriter 를 사용해봤지만 System.out.print 보다 낮아 입출력이 적은 부분은 System.out.print 로 입출력 횟수를 줄이고 코드 단순화
+2. 입력처리 방식
+- 공백으로 나뉘어진 숫자를 입력받는 'StringTokenizer' 를 사용했지만 split() 을 사용하는 게 더 나았음
+- 기존 BufferedReader, split() 로 사용
+3. 초기값 설정
+- 성능과 상관은 없지만, max, min 초기값을 배열의 첫번째 값 대신 MIN_VALUE, MAX_VALUE 값으로 초기화
+- 메모리 절약
+
