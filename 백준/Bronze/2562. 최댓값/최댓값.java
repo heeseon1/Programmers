@@ -8,14 +8,10 @@ public class Main {
 	
 		int num = 0;
 		int [] listValue = new int [9];
-        int max = Integer.MIN_VALUE;
-		 
+		int max = Integer.MIN_VALUE;
+
 		for(int i = 0; i  < 9; i++) {
-			int inputs = Integer.parseInt(br.readLine());
-			listValue[i] = inputs;
-		}
-		
-		for (int i = 0;  i  <  9;  i++) {
+			listValue[i] = Integer.parseInt(br.readLine());
 			if(listValue[i] >  max){
 				max = listValue[i];
 				num = i + 1;
