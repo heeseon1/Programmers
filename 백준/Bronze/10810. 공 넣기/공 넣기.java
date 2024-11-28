@@ -1,6 +1,7 @@
 import java.io.BufferedReader;  
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
@@ -20,12 +21,11 @@ public class Main {
 			int j=  Integer.parseInt(inputs[1]);
 			int k =  Integer.parseInt(inputs[2]);
 
-				for(int b = i; b <=j; b++) {
-					value[b-1] = k;
-				}
+			Arrays.fill(value, i - 1, j, k);
 		}
-		for(int c = 0; c  < n; c++) {
-			System.out.print(value[c] + " ");
-			}
+	
+		for (int v : value) {
+            System.out.print(v + " ");
+        }
 	}
 }
