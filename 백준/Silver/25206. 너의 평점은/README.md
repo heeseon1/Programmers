@@ -1,6 +1,18 @@
 # [Silver V] 너의 평점은 - 25206 
 
 [문제 링크](https://www.acmicpc.net/problem/25206) 
+### 추가 내용
+
+- Map.of() 는 불변맵이므로 수정이 불가능함
+- Map<String, Double> map = new HashMap<>();
+  
+  map.put("A+", 4.5);
+  
+  ...
+  
+  형식으로 사용하는 것이 더 유연
+
+- BufferedReader 사용 시 close() 호출하여 닫아주기 => 메모리 누수 방지
 
 ### 성능 요약
 
