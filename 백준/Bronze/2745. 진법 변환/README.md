@@ -2,6 +2,20 @@
 
 [문제 링크](https://www.acmicpc.net/problem/2745) 
 
+## 비고 
+
+진법 변환 계산
+
+  - Character.digit(c, B) 활용하여 문자 c 값을 B진법으로 변환
+  - B진법으로 변환한 값 X B진법 숫자의 제곱
+  - 공식: ∑dn ×Bⁿ
+  
+    - ZZZZZ 36인 경우
+      - Character.digit(Z, 36) => 35
+      - 35 X 36⁴ + 35 x 36³ + … + 35 X 36⁰
+
+- Integer.parseInt(String 문자, int 진법) 활용하면 10진수로 쉽게 변환
+
 ### 성능 요약
 
 메모리: 14276 KB, 시간: 104 ms
