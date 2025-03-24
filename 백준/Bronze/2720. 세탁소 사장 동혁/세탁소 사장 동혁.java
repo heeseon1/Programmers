@@ -11,24 +11,19 @@ public class Main {
 
     	// 입력
     	int t = Integer.parseInt(br.readLine());
+    	int[] coins = {25, 10, 5, 1};
     	
-    	for( int i = 0; i < t; i++) {
+    	for (int i = 0; i < t; i++) {
     		int c = Integer.parseInt(br.readLine());
+    		StringBuilder sb = new StringBuilder();
     		
-    		int quarter = c / 25;
-    		c %= 25;
-    		
-    		int dime = c / 10;
-    		c %= 10;
-    		
-    		int nickel = c / 5;
-    		c %= 5;
-    		
-    		int penny = c;
-    		
-    		String value = quarter + " " + dime + " " + nickel + " " + penny + "\n";
-    		bw.write(value);
+    		for (int coin: coins) {
+    			sb.append( c / coin).append(" ");
+    			c %= coin;
     		}
+    		sb.append("\n");
+    		bw.write(sb.toString());
+    	}
     	
     	// 출력
 		bw.flush();
