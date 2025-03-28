@@ -13,7 +13,7 @@ public class Main {
     	int v = Integer.parseInt(inputs[2]);
     	
     	// 계산
-    	int value = (int) Math.ceil((double)( v - a ) / ( a - b)) + 1;
+    	int value = ((v - a) + ( a - b - 1)) / (a - b) + 1;
 
     	// 출력
     	System.out.println(value);
